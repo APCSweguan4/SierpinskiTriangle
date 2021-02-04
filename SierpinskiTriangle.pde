@@ -20,7 +20,8 @@ public void draw()
   }
   if(tri) {
     sierpinski(10, 550, 580);
-  } else if(sqr) {
+  } 
+  if(sqr) {
     carpet(100, 100, 400);
   }
 }
