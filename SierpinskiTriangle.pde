@@ -14,7 +14,8 @@ public void draw()
   if(counter == 1) {
     tri = true;
     sqr = false;
-  } else if (counter == 2) {
+  }
+  if (counter == 2) {
     tri = false;
     sqr = true;
   }
