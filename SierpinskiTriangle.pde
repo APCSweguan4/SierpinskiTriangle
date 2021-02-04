@@ -63,8 +63,8 @@ public void sierpinski(float x, float y, float len)
 public void carpet(float x, float y, float len) {
   stroke((int)((Math.random() * 126) + 100), (int)((Math.random() * 126) + 100), (int)((Math.random() * 126) + 100));
   if (len <= sqrBase) {
-    square(x, y, len);
-    square(x + len/3, y + len/3, len/3);
+    rect(x, y, len, len);
+    rect(x + len/3, y + len/3, len/3, len/3);
   } else {
     carpet(x, y, len/3);
     carpet(x + len/3, y, len/3);
