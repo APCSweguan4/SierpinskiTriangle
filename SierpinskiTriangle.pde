@@ -1,4 +1,3 @@
-private int brightness = 50;
 private float triBase = 25;
 private float sqrBase = 25;
 private boolean tri = true;
@@ -11,7 +10,7 @@ public void setup()
 }
 public void draw()
 {
-  background(brightness, brightness, brightness, 80);
+  background(0);
   if(counter == 1) {
     tri = true;
     sqr = false;
@@ -33,12 +32,6 @@ public void mouseMoved()//optional
   }
 }
 public void keyPressed() {
-  if(keyCode == DOWN) {
-    brightness -= 5;
-  }
-  if(keyCode == UP && brightness <= 100) {
-    brightness += 5;  
-  }
   if(keyCode == RIGHT) {
     if(counter < 2) {
       counter++;
