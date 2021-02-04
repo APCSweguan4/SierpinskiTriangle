@@ -1,5 +1,5 @@
-private float triBase = 25;
-private float sqrBase = 25;
+private float triBase = 581;
+private float sqrBase = 401;
 private boolean tri = true;
 private boolean sqr = false;
 private int counter = 1;
@@ -29,8 +29,8 @@ public void draw()
 public void mouseMoved()//optional
 {
   if(mouseY > 0 && mouseY < 600) {
-    triBase = (mouseY / 2) + 15;
-    sqrBase = (mouseY / 2) + 15;
+     triBase = mouseY + 15;
+     sqrBase = mouseY + 15;
   }
 }
 public void keyPressed() {
